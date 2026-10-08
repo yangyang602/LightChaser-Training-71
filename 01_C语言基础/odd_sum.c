@@ -6,6 +6,6 @@ int main()
 	for(int i=1;i<=100;i+=2){
 		s+=i;
 	}
-	printf("1~100的奇数和为：%d",s);
+	printf("1~100鐨勫鏁板拰涓猴細",s);
 	return 0;
 }
