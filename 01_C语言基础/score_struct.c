@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h> 
 struct student{
-	char name[10];//¶¨Òε½αΉΉΜε 
+	char name[10];//ε®δΉ‰ζ–°η„η»“ζ„δ½“ 
 	float score;
 };
 int main()
