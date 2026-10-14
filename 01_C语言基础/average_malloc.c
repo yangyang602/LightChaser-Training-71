@@ -3,24 +3,24 @@
 int main(){
 	int n; 
 	float s=0;
-	printf("Çó¼¸¸öÊıµÄÆ½¾ùÖµ£º"); 
-    if(scanf("%d",&n)!=1) return 1;//¸ñÊ½²»¶ÔÇ¿ÖÆ½áÊø 
+	printf("æ±‚å‡ ä¸ªæ•°çš„å¹³å‡å€¼ï¼š"); 
+    if(scanf("%d",&n)!=1) return 1;//æ ¼å¼ä¸å¯¹å¼ºåˆ¶ç»“æŸ 
     int *arr=(int*)malloc(n*sizeof(int));
-    if(arr == NULL)//È·ÈÏ²»»áÒç³ö£¬ÊÇ·ñ»¹ÓĞÄÚ´æ 
+    if(arr==NULL)//ç¡®è®¤ä¸ä¼šæº¢å‡ºï¼Œæ˜¯å¦è¿˜æœ‰å†…å­˜ 
 	{
-        printf("ÄÚ´æ²»×ã");
+        printf("å†…å­˜ä¸è¶³");
         return 1;
     }
-    printf("ÊäÈë£º"); 
+    printf("è¾“å…¥ï¼š"); 
     for(int i=0;i<n;i++)
 	{
-		scanf("%d",&arr[i]);//Çó×ÜÖµ 
+		scanf("%d",&arr[i]);//æ±‚æ€»å€¼ 
 		s+=arr[i];
 	} 
 	float a;
 	a=s/n;
-	printf("Æ½¾ùÖµÎª£º%.1f",a);
-	free(arr);//ÊÍ·Å·ÀÖ¹Ò°Ö¸Õë 
+	printf("å¹³å‡å€¼ä¸ºï¼š%.1f",a);
+	free(arr);//é‡Šæ”¾é˜²æ­¢é‡æŒ‡é’ˆ 
     arr=NULL; 
 	return 0;
 } 
